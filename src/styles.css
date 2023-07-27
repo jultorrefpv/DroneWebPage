@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0px;
+}
+
+.contacto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Chivo', sans-serif;
+}
+.flex{
+    display: flex;
+}
+
+#iconPlace{
+    margin-top: 10px;
+    width: 30px;
+    height: 20px;
+}
+
+#iconWhatsapp{
+    margin-top: 13px;
+    width: 30px;
+    height: 20px;
+}
+#iconEnvelope{
+    margin-top: 17px;
+    width: 30px;
+    height: 20px;
+}
+
+.spacebetween{
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
