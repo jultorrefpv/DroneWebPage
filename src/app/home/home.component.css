@@ -1,12 +1,18 @@
+
+
+
+
+
+
 img{
     width: 100%;
     height: auto;
 }
 #DroneImage{
-    height: 600px;
+    
 }
 #BuildingsImage{
-    height: 400px;
+    height: auto;
 }
 .image{
     overflow: hidden;
@@ -22,7 +28,7 @@ img{
 }
 
 .welcome p{
-    padding: 80px 20px 40px 80px;
+    padding: 50px;
     color: white;
     margin: 0px;
     text-align: center;
@@ -31,7 +37,7 @@ img{
 
 #title{
     position: absolute;
-    top: 90px;
+    top: 1.5em;
     left: 25px;
     width: 32%;
     text-align: left;
@@ -56,6 +62,7 @@ h1{
 .services{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #3C3F41;
     padding-top: 20px;
@@ -74,7 +81,7 @@ h1{
 
 
 .service{
-    width: 30%;
+    width: 350px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -94,7 +101,7 @@ h1{
 #whyUs{
     position: absolute;
     text-align: center;
-    top: 120px;
+    top: 0.5em;
     left: 50px;
     font-family: 'Chivo', sans-serif;
     color: white;
@@ -134,4 +141,49 @@ ol{
 article{
     width: 90%;
     padding-left: 20px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+
+    h1{
+        font-size: 0.5em !important;
+    }
+
+    #SubTitle{
+        top:  100px;
+        font-size: 0.2em !important;
+    }
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+
+    h1{
+        font-size: 0.8em !important;
+    }
+    #SubTitle{
+        top:  120px;
+        font-size: 0.5em !important;
+    }
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 930px) {
+
+    h1{
+        font-size: 1.5em !important;
+    }
+    #SubTitle{
+        top:  200px;
+        font-size: 0.8em !important;
+    }
+
+}
+
+@media only screen and (min-width: 930px) {
+
+    h1{
+        font-size: 2em !important;
+    }
+
 }

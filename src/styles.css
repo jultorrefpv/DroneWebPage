@@ -1,12 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     margin: 0px;
+    width: 100%;
 }
 
 .contacto{
     width: 50%;
     display: flex;
     justify-content: center;
+}
+.form{
+    
+    text-align: center;
+    font-family: 'Chivo', sans-serif;
+    margin: 20px;
+}
+
+.contact{
+    font-family: 'Chivo', sans-serif;
+    margin-left: 20px;
 }
 
 h3{
