@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     background-color: #3C3F41;
+
 }
 
 .services{
@@ -12,4 +13,22 @@
         color: white;
         font-family: 'Chivo', sans-serif;
 
+}
+
+.onCursor :hover, .onCursor :hover p, .onCursor :hover img{
+    cursor: default;
+    color: rgb(122, 111, 111);
+}
+
+
+
+
+
+#iconHome{
+    width: 30px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
 }

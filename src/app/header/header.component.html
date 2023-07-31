@@ -1,11 +1,14 @@
-<section class="headerContainer">
-    <div class="services">
+<section class="headerContainer onCursor">
+    <div class="flex services onCursor" routerLink="home" >
+        <p>Inicio</p>
+    </div>
+    <div class="services onCursor" id="ourServices">
         <p>Nuestros Servicios</p>
     </div>
-    <div class="services">
-        <p>Quienes somos</p>
+    <div class="services onCursor" routerLink="aboutUs">
+        <p >Quienes somos</p>
     </div>
-    <div class="services">
+    <div class="services onCursor" (click)="goToBottom()">
         <p>Contacto</p>
     </div>
 </section>
