@@ -1,14 +1,26 @@
-<section class="headerContainer onCursor">
-    <div class="flex services onCursor" routerLink="home" >
-        <p>Inicio</p>
-    </div>
-    <div class="services onCursor" id="ourServices">
-        <p>Nuestros Servicios</p>
-    </div>
-    <div class="services onCursor" routerLink="aboutUs">
-        <p >Quienes somos</p>
-    </div>
-    <div class="services onCursor" (click)="goToBottom()">
-        <p>Contacto</p>
-    </div>
+<section class="headerContainer">
+    <section class="LeftHeaderContainer">
+        <div>
+            <img src="./../../assets/Iconos/LogoCompleto.png" alt="" id="Logo">
+        </div>
+    </section>
+    <section class="RightHeaderContainer onCursor">
+        <div class="flex optionMenu onCursor" routerLink="home" >
+            <p>Inicio</p>
+        </div>
+        <div class="optionMenu onCursor" id="ourServices" (click)="onClickServices()">
+            <button  class="serviceMenuButton">Nuestros Servicios</button>
+            <div *ngIf="showServicesMenu" class="dropDownServices">
+                <p>Fotografía Aerea</p>
+                <p>Publicidad</p>
+            </div>
+        </div>
+        <div class="optionMenu onCursor" routerLink="aboutUs">
+            <button >Quienes somos</button>
+        </div>
+        <div class="optionMenu onCursor" (click)="goToBottom()">
+            <button >Contacto</button>
+        </div>
+    </section>
+    
 </section>

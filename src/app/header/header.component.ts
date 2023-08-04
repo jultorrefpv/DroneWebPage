@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  showServicesMenu = false;
   goToBottom(){
     window.scrollTo(0,document.body.scrollHeight);
+  }
+  onClickServices(){
+    this.showServicesMenu = !this.showServicesMenu;
   }
 }

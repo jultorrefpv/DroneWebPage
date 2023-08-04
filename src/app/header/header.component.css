@@ -1,27 +1,44 @@
+
 .headerContainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #3C3F41;
+}
+
+.RightHeaderContainer{
+    display: flex;
+    justify-content: center;
 
 }
 
-.services{
+.optionMenu{
     margin-left: 10px;
     margin-right: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
-.services p{
+.optionMenu button{
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-family: 'Chivo', sans-serif;
+}
+.optionMenu div{
+    position: absolute;
+    top: 60px;
+    z-index: 110;
+    
+}
+.serviceMenuButton{ 
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+}
+
+.optionMenu p{
         color: white;
         font-family: 'Chivo', sans-serif;
 
 }
-
-.onCursor :hover, .onCursor :hover p, .onCursor :hover img{
-    cursor: default;
-    color: rgb(122, 111, 111);
-}
-
-
-
 
 
 #iconHome{
@@ -32,3 +49,29 @@
     display: flex;
     align-items: center;
 }
+#Logo{
+    width: 250px;
+}
+
+.dropDownServices{
+    background-color: white;
+    
+} 
+.dropDownServices p{
+    margin-left: 15px;
+    font-family: 'Chivo', sans-serif;
+    color: #3C3F41;
+}
+
+.optionMenu:hover {
+    background-color: white;
+}
+
+.RightHeaderContainer div:hover button {
+    color: #3C3F41;
+}
+.RightHeaderContainer div:hover p {
+    color: #3C3F41;
+}
+
+
