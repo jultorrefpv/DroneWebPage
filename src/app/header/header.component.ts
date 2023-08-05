@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,10 +8,14 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   showServicesMenu = false;
+  isChecked= false;
   goToBottom(){
     window.scrollTo(0,document.body.scrollHeight);
   }
   onClickServices(){
     this.showServicesMenu = !this.showServicesMenu;
+  }
+  closeMenu(){
+    this.isChecked = false;
   }
 }

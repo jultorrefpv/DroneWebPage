@@ -22,5 +22,22 @@
             <button >Contacto</button>
         </div>
     </section>
+    <section class="RightHeaderContainer2 container nav-container">
+        <input class="checkbox" type="checkbox" name="" id="" [(ngModel)]="isChecked" [checked]="isChecked" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>  
+        <div class="menu-items">
+            <li><a routerLink="home" (click)="closeMenu()">Inicio</a></li>
+            <li><a href="#">Nuestros Servicios</a></li>
+            <li><a routerLink="aboutUs" (click)="closeMenu()">Quienes somos</a></li>
+            <li><a (click)="goToBottom()" (click)="closeMenu()">Contacto</a></li>
+        </div>
+    </section>
+
+
+
     
 </section>
