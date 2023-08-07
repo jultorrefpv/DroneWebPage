@@ -1,5 +1,5 @@
 <section class="headerContainer">
-    <section class="LeftHeaderContainer">
+    <section class="LeftHeaderContainer" *ngIf="!isChecked">
         <div>
             <img src="./../../assets/Iconos/LogoCompleto.png" alt="Logo Hyperion Art Studios" id="Logo">
         </div>
@@ -11,7 +11,7 @@
         <div class="optionMenu onCursor" id="ourServices" (click)="onClickServices()">
             <button  class="serviceMenuButton">Nuestros Servicios</button>
             <div *ngIf="showServicesMenu" class="dropDownServices">
-                <p>Fotografía Aerea</p>
+                <p routerLink="aerial-photography">Fotografía Aerea</p>
                 <p>Publicidad</p>
             </div>
         </div>

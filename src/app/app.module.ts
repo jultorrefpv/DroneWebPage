@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import {FormsModule} from '@angular/forms';
+import { AerialPhotographyComponent } from './aerial-photography/aerial-photography.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {FormsModule} from '@angular/forms';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    AerialPhotographyComponent
   ],
   imports: [
     BrowserModule,

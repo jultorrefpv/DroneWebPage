@@ -1,0 +1,116 @@
+img{
+    width: 100%;
+    height: auto;
+}
+
+#BuildingsImage{
+    height: auto;
+}
+.image{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    max-height: 70vh;
+}
+
+.titleContainer{
+    position: absolute;
+    display: flex;
+    top: 150px;
+    left: 100px;
+    justify-content: center;
+    z-index: 200;
+    background-color: #3C3F41;
+    opacity:  0.5;
+    padding: 100px;
+    width: 40vw;
+}
+
+h2{
+    z-index: 210px;
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    opacity:  1;
+}
+
+.welcome{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #3C3F41;
+    padding: 50px;
+}
+.welcome p{
+    
+    color: white;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Chivo', sans-serif;
+}
+
+.applications{
+    background-color: #3C3F41;
+    margin-top: 2px;
+    padding-top: 50px;
+
+}
+
+.applicationItem{
+    display:flex;
+    padding-bottom: 30px;
+
+}
+.applicationItem {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.DescriptionContainer{
+    width: 40%;
+    min-width: 350px;
+    margin-bottom: 20px;
+}
+
+.ImageContainer{
+    width: 40%;
+    min-width: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.ImageContainer img{
+    width: 80%;
+    height: auto;
+    border-radius: 25px;
+}
+.DescriptionContainer p{  
+    padding: 1vw;
+}
+.DescriptionContainer h2{  
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+p{  
+    color: white;
+    margin: 0px;
+    font-family: 'Chivo', sans-serif;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 670px) {
+
+    .DescriptionContainer h2{
+        text-align: center;
+        padding: 15px;
+    }
+    .DescriptionContainer p{
+        text-align: center;
+        padding: 15px;
+    }
+    .titleContainer{
+        top: 40px;
+        padding: 20px;
+
+    }
+
+}

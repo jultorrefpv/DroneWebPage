@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #3C3F41;
+    width: 100%;
 }
 
 .RightHeaderContainer{
@@ -37,6 +38,7 @@
 .optionMenu p{
         color: white;
         font-family: 'Chivo', sans-serif;
+        cursor: default;
 
 }
 
@@ -79,6 +81,10 @@
     .RightHeaderContainer{
         display: none;
     }
+    .RightHeaderContainer2{
+      width: 100%;
+    }
+    
     .nav-container .checkbox {
         position: absolute;
         display: block;
@@ -126,7 +132,7 @@
         transform-origin: 0% 100%;
         transition: transform 0.4s ease-in-out;
       }
-      
+    
     .nav-container input[type="checkbox"]:checked ~ .menu-items {
         transform: translateX(0);
         height: 100vh;
@@ -158,6 +164,7 @@
         font-weight: 500;
         font-size: 1.2rem;
         padding: 0.7rem;
+        color: white;
         font-family: 'Chivo', sans-serif;
       }
       
@@ -174,8 +181,6 @@
         transform: translate(-500%);
         display: flex;
         flex-direction: column;
-        margin-left: -40px;
-        padding-left: 50px;
         transition: transform 0.5s ease-in-out;
         text-align: center;
         display: none;
