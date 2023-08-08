@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import {FormsModule} from '@angular/forms';
 import { AerialPhotographyComponent } from './aerial-photography/aerial-photography.component';
+import { AdvertismentComponent } from './advertisment/advertisment.component';
+import { HeaderPageComponent } from './components/header-page/header-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { AerialPhotographyComponent } from './aerial-photography/aerial-photogra
     HeaderComponent,
     FooterComponent,
     AboutUsComponent,
-    AerialPhotographyComponent
+    AerialPhotographyComponent,
+    AdvertismentComponent,
+    HeaderPageComponent
   ],
   imports: [
     BrowserModule,

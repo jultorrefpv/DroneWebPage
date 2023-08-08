@@ -11,11 +11,15 @@ export class HeaderComponent {
   isChecked= false;
   goToBottom(){
     window.scrollTo(0,document.body.scrollHeight);
+    this.hiddeservices();
   }
   onClickServices(){
     this.showServicesMenu = !this.showServicesMenu;
   }
   closeMenu(){
     this.isChecked = false;
+  }
+  hiddeservices(){
+    this.showServicesMenu = false;
   }
 }

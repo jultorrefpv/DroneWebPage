@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { AerialPhotographyComponent } from "./aerial-photography/aerial-photography.component"
+import { AerialPhotographyComponent } from "./aerial-photography/aerial-photography.component";
+import { AdvertismentComponent } from "./advertisment/advertisment.component"
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'aboutUs', component: AboutUsComponent },
   { path: 'aerial-photography', component: AerialPhotographyComponent },
+  { path: 'advertisment', component: AdvertismentComponent },
 ];
 
 @NgModule({
