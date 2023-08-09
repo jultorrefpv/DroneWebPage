@@ -1,0 +1,90 @@
+img{
+    width: 100%;
+    height: auto;
+}
+
+.image{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    max-height: 150vh;
+}
+.titleContainer{
+    position: absolute;
+    display: flex;
+    top: 250px;
+    left: 100px;
+    justify-content: center;
+    z-index: 200;
+    background-color: #3C3F41;
+    opacity:  0.5;
+    padding: 100px;
+    width: 40%;
+}
+h2{
+    z-index: 210px;
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    opacity:  1;
+}
+.applications{
+    background-color: #3C3F41;
+    margin-top: 2px;
+    display: flex;
+    padding: 100px;
+    flex-wrap: wrap;
+    min-width: 350px;
+    justify-content: space-around;
+}
+
+.applicationItem {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    width: 30%;
+    min-width: 300px;
+    
+}
+.DescriptionContainer{
+    margin-bottom: 20px;
+}
+
+.ImageContainer img{
+    width: 80%;
+    height: auto;
+    border-radius: 25px;
+}
+.DescriptionContainer p{  
+    padding: 1vw;
+    text-align: justify;
+}
+.DescriptionContainer h2{  
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+}
+p{  
+    color: white;
+    margin: 0px;
+    font-family: 'Chivo', sans-serif;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 670px) {
+
+    .DescriptionContainer h2{
+        text-align: center;
+        padding: 15px;
+    }
+    .DescriptionContainer p{
+        text-align: center;
+        padding: 15px;
+    }
+    .titleContainer{
+        top: 100px;
+        padding: 20px;
+        width: 40%;
+    }
+
+}
