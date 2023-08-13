@@ -1,14 +1,14 @@
 <section class="headerContainer">
     <section class="LeftHeaderContainer" *ngIf="!isChecked">
         <div>
-            <img src="./../../assets/Iconos/LogoCompleto.png" alt="Logo Hyperion Art Studios" id="Logo">
+            <img src="./../../assets/Iconos/logoHeader.png" alt="Logo Hyperion Art Studios" id="Logo">
         </div>
     </section>
     <section class="RightHeaderContainer onCursor">
         <div class="flex optionMenu onCursor" routerLink="home" (click)="hiddeservices()">
             <p>Inicio</p>
         </div>
-        <div class="optionMenu onCursor" id="ourServices" (click)="onClickServices()">
+        <div class="optionMenu onCursor" id="ourServices" (mouseenter)="onClickServices()" (mouseleave)="onClickServices()">
             <button  class="serviceMenuButton">Nuestros Servicios</button>
             <div *ngIf="showServicesMenu" class="dropDownServices">
                 <p routerLink="aerial-photography">Fotografía Aerea</p>
@@ -36,7 +36,7 @@
             <ul *ngIf="showServicesMenu">
                 <li><a routerLink="aerial-photography" (click)="closeMenu()">Fotografía Aerea</a></li>
                 <li><a routerLink="advertisment" (click)="closeMenu()">Publicidad</a></li>
-                <li><a routerLink="events">Eventos</a></li>
+                <li><a routerLink="events" (click)="closeMenu()">Eventos</a></li>
             </ul>
             <li><a routerLink="aboutUs" (click)="closeMenu()">Quienes somos</a></li>
             <li><a (click)="goToBottom()" (click)="closeMenu()">Contacto</a></li>
