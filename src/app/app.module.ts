@@ -11,6 +11,7 @@ import {FormsModule} from '@angular/forms';
 import { AerialPhotographyComponent } from './aerial-photography/aerial-photography.component';
 import { AdvertismentComponent } from './advertisment/advertisment.component';
 import { HeaderPageComponent } from './components/header-page/header-page.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HeaderPageComponent } from './components/header-page/header-page.compon
     AboutUsComponent,
     AerialPhotographyComponent,
     AdvertismentComponent,
-    HeaderPageComponent
+    HeaderPageComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,

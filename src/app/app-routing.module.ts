@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AerialPhotographyComponent } from "./aerial-photography/aerial-photography.component";
 import { AdvertismentComponent } from "./advertisment/advertisment.component"
+import { EventsComponent } from "./events/events.component"
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'aboutUs', component: AboutUsComponent },
   { path: 'aerial-photography', component: AerialPhotographyComponent },
   { path: 'advertisment', component: AdvertismentComponent },
+  { path: 'events', component: EventsComponent },
 ];
 
 @NgModule({
