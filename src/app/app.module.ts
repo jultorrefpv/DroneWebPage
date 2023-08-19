@@ -12,6 +12,7 @@ import { AerialPhotographyComponent } from './aerial-photography/aerial-photogra
 import { AdvertismentComponent } from './advertisment/advertisment.component';
 import { HeaderPageComponent } from './components/header-page/header-page.component';
 import { EventsComponent } from './events/events.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { EventsComponent } from './events/events.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-<section class="image" id="DroneImage">
+<section class="image" id="DroneImage" >
     <img src="../../assets/Home/HomeImage1.png" alt="Dron para servicios de fotografía y video">
     <h1 id="title">Imagina el Mundo Desde las Alturas: Servicios de Fotografía y Videos Aéreos en Colombia</h1>
     <h3 id="SubTitle">Grabación, edición, producción de fotografía aerea con drones</h3>
@@ -14,7 +14,7 @@
 </section>
 <h2 id="focus">Nuestro Enfoque</h2>
 <section class = "services">
-    <div class="service">
+    <div class="service" [@foobar]="states.stateServiceFotography" ngModel #photografy>
         <h2>
             Fotografia Aerea
         </h2>
@@ -28,7 +28,7 @@
             nuestras tomas aéreas agregarán un toque mágico a tus recuerdos y proyectos.
         </p>
     </div>
-    <div class="service">
+    <div class="service" [@DowntoUp]="states.stateServiceEvents" ngModel #events>
         <h2>
             Eventos Personales
         </h2>
@@ -42,7 +42,7 @@
             publicitarios hasta cobertura de eventos, nuestros videos aéreos dejarán una impresión duradera.
         </p>
     </div>
-    <div class="service">
+    <div class="service" [@RighttoLeft]="states.stateServiceAdvertisment" ngModel #advertisment>
         <h2>
             Publicidad
         </h2>

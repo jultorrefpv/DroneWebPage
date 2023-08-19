@@ -143,6 +143,28 @@ article{
     padding-left: 20px;
 }
 
+
+/* .reveal {
+    position: relative;
+    opacity: 0;
+  }
+  .reveal.active {
+    opacity: 1;
+  }
+.slide-right{
+    animation:slide-right 1s linear both
+}
+@keyframes slide-right{
+    0%{
+        transform:translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity: 1;
+    }
+} */
+
 @media only screen and (min-width: 0px) and (max-width: 400px) {
 
     h1{
