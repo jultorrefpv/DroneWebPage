@@ -37,20 +37,20 @@ const style2inY = style({
     trigger('foobar', [
       state('show', style1),
       state('hide', style2),
-      transition('show => hide', animate('1400ms ease-out')),
-      transition('hide => show', animate('1400ms ease-in'))
+      transition('show => hide', animate('700ms ease-out')),
+      transition('hide => show', animate('700ms ease-in'))
     ]),
     trigger('DowntoUp', [
       state('show', style1inY),
       state('hide', style2inY),
-      transition('show => hide', animate('1400ms ease-out')),
-      transition('hide => show', animate('1400ms ease-in'))
+      transition('show => hide', animate('700ms ease-out')),
+      transition('hide => show', animate('700ms ease-in'))
     ]),
     trigger('RighttoLeft', [
       state('show', style1),
       state('hide', style3),
-      transition('show => hide', animate('1400ms ease-out')),
-      transition('hide => show', animate('1400ms ease-in'))
+      transition('show => hide', animate('700ms ease-out')),
+      transition('hide => show', animate('700ms ease-in'))
     ]),
 
   ]
@@ -71,9 +71,9 @@ export class HomeComponent {
   checkScroll() {
     const componentPosition = this.el.nativeElement.offsetTop
     const scrollPosition = window.pageYOffset
-    this.states.stateServiceEvents = (scrollPosition >= this.eventsConteiner.nativeElement.offsetTop - 250) ? 'show' : 'hide';
-    this.states.stateServiceAdvertisment = (scrollPosition >= this.advetismentConteiner.nativeElement.offsetTop - 250) ? 'show' : 'hide';
-    this.states.stateServiceFotography = (scrollPosition >= this.photografyContainer.nativeElement.offsetTop - 250) ? 'show' : 'hide';
+    this.states.stateServiceEvents = (scrollPosition >= this.eventsConteiner.nativeElement.offsetTop - 450) ? 'show' : 'hide';
+    this.states.stateServiceAdvertisment = (scrollPosition >= this.advetismentConteiner.nativeElement.offsetTop - 450) ? 'show' : 'hide';
+    this.states.stateServiceFotography = (scrollPosition >= this.photografyContainer.nativeElement.offsetTop - 450) ? 'show' : 'hide';
 
   }
 
