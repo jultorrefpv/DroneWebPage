@@ -1,7 +1,7 @@
 <section class="headerContainer">
     <section class="LeftHeaderContainer" *ngIf="!isChecked">
         <div>
-            <img src="./../../assets/Iconos/logoHeader.png" alt="Logo Hyperion Art Studios" id="Logo">
+            <img src="./../../assets/Iconos/logoHeader.png" alt="Logo Hyperion Art Studios" id="Logo" routerLink="home" (click)="hiddeservicesAndCloseMenu()">
         </div>
     </section>
     <section class="RightHeaderContainer onCursor">

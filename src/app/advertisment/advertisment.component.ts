@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PanelServiceModel } from '../core/domain/models/panel-service-model';
 
 @Component({
   selector: 'app-advertisment',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./advertisment.component.css']
 })
 export class AdvertismentComponent {
-
+  servicePanelInfo: PanelServiceModel = new PanelServiceModel;
+  constructor(){
+    this.servicePanelInfo.ServiceName = ["Fotografía Aérea","Eventos Personales"];
+  }
 }

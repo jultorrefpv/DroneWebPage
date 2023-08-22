@@ -22,4 +22,8 @@ export class HeaderComponent {
   hiddeservices(){
     this.showServicesMenu = false;
   }
+  hiddeservicesAndCloseMenu(){
+    this.showServicesMenu = false;
+    this.isChecked = false;
+  }
 }

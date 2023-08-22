@@ -1,0 +1,12 @@
+<section class = "services">
+    <div class="service" *ngFor="let service of servicesData">
+        <figure class="imageService">
+            <img [src]="service.pathImage" alt="" id = "">
+        </figure>
+        <div class="redirectionTextContainer">
+            <h4 [routerLink]="service.routerLink">
+                {{service.serviceName}}
+            </h4>
+        </div>
+    </div>
+</section>

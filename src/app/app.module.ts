@@ -13,6 +13,7 @@ import { AdvertismentComponent } from './advertisment/advertisment.component';
 import { HeaderPageComponent } from './components/header-page/header-page.component';
 import { EventsComponent } from './events/events.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServicesPanelComponent } from './components/services-panel/services-panel.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AerialPhotographyComponent,
     AdvertismentComponent,
     HeaderPageComponent,
-    EventsComponent
+    EventsComponent,
+    ServicesPanelComponent
   ],
   imports: [
     BrowserModule,

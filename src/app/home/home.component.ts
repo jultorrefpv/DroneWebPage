@@ -2,6 +2,7 @@ import { Component, HostListener, ElementRef, ViewChild } from '@angular/core';
 
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { AdvertismentComponent } from '../advertisment/advertisment.component';
+import { PanelServiceModel } from '../core/domain/models/panel-service-model';
 
 
 const style1 = style({
@@ -65,7 +66,10 @@ export class HomeComponent {
     stateServiceAdvertisment: "hide",
     stateServiceEvents: "hide",
   }
-  constructor(public el: ElementRef) { }
+  servicePanelInfo: PanelServiceModel = new PanelServiceModel;
+  constructor(public el: ElementRef) { 
+    this.servicePanelInfo.ServiceName = ["Fotografía Aérea", "Eventos Personales", "Publicidad"];
+  }
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
