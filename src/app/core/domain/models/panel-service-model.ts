@@ -1,3 +1,5 @@
+import {serviceDataPanel} from "../constants/panel-services.constants"
+
 export class PanelServiceModel {
 
     ServiceName: string[] = [];
@@ -11,30 +13,8 @@ export class PanelServiceDataModel {
     pathImage:string = "";
     Id:string = "";
     services:any = [];
-    servicesInfo = 
-    {
-        "Fotografía Aérea": {
-                serviceName: "Fotografía Aérea",
-                pathImage: "../../../assets/Home/fotografíaAerea.png",
-                Id: "fotografiaAereaImg",
-                routerLink: "../aerial-photography"
-        },
-        "Eventos Personales":{
-            serviceName: "Eventos Personales",
-            pathImage: "../../../assets/Home/eventosPersonales.png",
-            Id: "eventosPersonalesImg",
-            routerLink: "../events"
-        },
-        "Publicidad":{
-            serviceName: "Publicidad",
-            pathImage: "../../../assets/Home/servicioPublicidad.png",
-            Id: "PublicidadImg",
-            routerLink: "../advertisment"
-        }
-    }
-    constructor(){
-
-        
+    servicesInfo = serviceDataPanel;
+    constructor(){        
     }
     
     getServicedataPanel(_services: PanelServiceModel){

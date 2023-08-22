@@ -3,6 +3,7 @@ import { Component, HostListener, ElementRef, ViewChild } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { AdvertismentComponent } from '../advertisment/advertisment.component';
 import { PanelServiceModel } from '../core/domain/models/panel-service-model';
+import { serviceDataPanel } from '../core/domain/constants/panel-services.constants';
 
 
 const style1 = style({
@@ -67,6 +68,7 @@ export class HomeComponent {
     stateServiceEvents: "hide",
   }
   servicePanelInfo: PanelServiceModel = new PanelServiceModel;
+  serviceCopys = serviceDataPanel;
   constructor(public el: ElementRef) { 
     this.servicePanelInfo.ServiceName = ["Fotografía Aérea", "Eventos Personales", "Publicidad"];
   }

@@ -11,9 +11,9 @@
         <div class="optionMenu onCursor" id="ourServices" (mouseenter)="onClickServices()" (mouseleave)="onClickServices()">
             <button  class="serviceMenuButton">Nuestros Servicios</button>
             <div *ngIf="showServicesMenu" class="dropDownServices">
-                <p routerLink="aerial-photography">Fotografía Aerea</p>
-                <p routerLink="advertisment">Publicidad</p>
-                <p routerLink="events">Eventos</p>
+                <p routerLink="aerial-photography">{{serviceCopys['Fotografía Aérea'].serviceName}}</p>
+                <p routerLink="advertisment">{{serviceCopys['Publicidad'].serviceName}}</p>
+                <p routerLink="events">{{serviceCopys['Eventos Personales'].serviceName}}</p>
             </div>
         </div>
         <div class="optionMenu onCursor" routerLink="aboutUs" (click)="hiddeservices()">
@@ -34,9 +34,9 @@
             <li><a routerLink="home" (click)="closeMenu()">Inicio</a></li>
             <li><a (click)=" onClickServices()">Nuestros Servicios</a></li>
             <ul *ngIf="showServicesMenu">
-                <li><a routerLink="aerial-photography" (click)="closeMenu()">Fotografía Aerea</a></li>
-                <li><a routerLink="advertisment" (click)="closeMenu()">Publicidad</a></li>
-                <li><a routerLink="events" (click)="closeMenu()">Eventos</a></li>
+                <li><a routerLink="aerial-photography" (click)="closeMenu()">{{serviceCopys['Fotografía Aérea'].serviceName}}</a></li>
+                <li><a routerLink="advertisment" (click)="closeMenu()">{{serviceCopys['Publicidad'].serviceName}}</a></li>
+                <li><a routerLink="events" (click)="closeMenu()">{{serviceCopys['Eventos Personales'].serviceName}}</a></li>
             </ul>
             <li><a routerLink="aboutUs" (click)="closeMenu()">Quienes somos</a></li>
             <li><a (click)="goToBottom()" (click)="closeMenu()">Contacto</a></li>
