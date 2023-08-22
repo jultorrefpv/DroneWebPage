@@ -27,12 +27,13 @@ img{
     width: 40vw;
 }
 
-h2{
+h1,h2{
     z-index: 210px;
     color: white;
     font-family: 'Chivo', sans-serif;
     opacity:  1;
 }
+
 
 .welcome{
     margin-top: 0px;
@@ -87,7 +88,7 @@ h2{
 .DescriptionContainer p{  
     padding: 1vw;
 }
-.DescriptionContainer h2{  
+.DescriptionContainer h1{  
     padding-left: 1vw;
     padding-right: 1vw;
 }
@@ -99,7 +100,7 @@ p{
 
 @media only screen and (min-width: 0px) and (max-width: 670px) {
 
-    .DescriptionContainer h2{
+    .DescriptionContainer h1{
         text-align: center;
         padding: 15px;
     }

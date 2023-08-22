@@ -1,10 +1,8 @@
 import { Component, HostListener, ElementRef, ViewChild } from '@angular/core';
-
 import { trigger, state, style, animate, transition } from '@angular/animations';
-import { AdvertismentComponent } from '../advertisment/advertisment.component';
 import { PanelServiceModel } from '../core/domain/models/panel-service-model';
 import { serviceDataPanel } from '../core/domain/constants/panel-services.constants';
-
+import { Meta } from '@angular/platform-browser';
 
 const style1 = style({
   opacity: 1,
@@ -69,8 +67,10 @@ export class HomeComponent {
   }
   servicePanelInfo: PanelServiceModel = new PanelServiceModel;
   serviceCopys = serviceDataPanel;
-  constructor(public el: ElementRef) { 
+  constructor(public el: ElementRef,
+              private metaService: Meta) { 
     this.servicePanelInfo.ServiceName = ["Fotografía Aérea", "Eventos Personales", "Publicidad"];
+    this.addTag();
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -81,6 +81,10 @@ export class HomeComponent {
     this.states.stateServiceAdvertisment = (scrollPosition >= this.advetismentConteiner.nativeElement.offsetTop - 450) ? 'show' : 'hide';
     this.states.stateServiceFotography = (scrollPosition >= this.photografyContainer.nativeElement.offsetTop - 450) ? 'show' : 'hide';
 
+  }
+  addTag() {
+    this.metaService.updateTag({ name: 'description', content: 'Servicios de producción audiovisual con drones para fotografía y toma de videos aéreos para publicidad, cobertura de eventos, videos inmobiliarios, videos FPV, utilizando drones DJI en Bogotá, Colombia' });
+    this.metaService.updateTag({ property: 'og:title', content: 'Servicios de producción audiovisual aérea para fotografía y toma de videos en Bogotá Colombia para negocios y empresas' });
   }
 
 }

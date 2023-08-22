@@ -22,7 +22,7 @@ img{
     padding: 100px;
     width: 40%;
 }
-h2{
+h1{
     z-index: 210px;
     color: white;
     font-family: 'Chivo', sans-serif;
@@ -60,7 +60,7 @@ h2{
     padding: 1vw;
     text-align: justify;
 }
-.DescriptionContainer h2{  
+.DescriptionContainer h1{  
     padding-left: 1vw;
     padding-right: 1vw;
     text-align: center;
@@ -73,7 +73,7 @@ p{
 
 @media only screen and (min-width: 0px) and (max-width: 670px) {
 
-    .DescriptionContainer h2{
+    .DescriptionContainer h1{
         text-align: center;
         padding: 15px;
     }
