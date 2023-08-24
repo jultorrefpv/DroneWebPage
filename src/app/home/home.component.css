@@ -173,18 +173,37 @@ article{
         top:  100px;
         font-size: 0.2em !important;
     }
+    h2{
+        font-size: 1em !important;
+    }
+    #whyUs{
+        top: 20px;
+        left: 15px;
+        font-size: 0.5em !important;
+    }
+
 
 }
 
 @media only screen and (min-width: 400px) and (max-width: 700px) {
 
     h1{
-        font-size: 0.8em !important;
+        font-size: 0.6em !important;
     }
     #SubTitle{
         top:  140px;
         font-size: 0.5em !important;
     }
+    
+    h2{
+        font-size: 1em !important;
+    }
+    #whyUs{
+        top: 30px;
+        left: 25px;
+        font-size: 0.7em !important;
+    }
+
 
 }
 

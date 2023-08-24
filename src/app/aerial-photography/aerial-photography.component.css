@@ -17,14 +17,14 @@ img{
 .titleContainer{
     position: absolute;
     display: flex;
-    top: 150px;
-    left: 100px;
+    top: 0px;
+    left: 0px;
     justify-content: center;
     z-index: 200;
     background-color: #3C3F41;
     opacity:  0.5;
-    padding: 100px;
-    width: 40vw;
+    width: 80%;
+    margin: 10%;
 }
 
 h1,h2{
@@ -104,13 +104,16 @@ p{
         text-align: center;
         padding: 15px;
     }
+    .DescriptionContainer h2{
+        text-align: center;
+        padding: 15px;
+    }
     .DescriptionContainer p{
         text-align: center;
         padding: 15px;
     }
     .titleContainer{
         top: 40px;
-        padding: 20px;
 
     }
 

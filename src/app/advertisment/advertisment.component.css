@@ -13,16 +13,22 @@ img{
 .titleContainer{
     position: absolute;
     display: flex;
-    top: 250px;
-    left: 100px;
+    top: 0px;
+    left: 0px;
     justify-content: center;
     z-index: 200;
     background-color: #3C3F41;
     opacity:  0.5;
-    padding: 100px;
-    width: 40%;
+    width: 80%;
+    margin: 10%;
 }
 h1{
+    z-index: 210px;
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    opacity:  1;
+}
+h2{
     z-index: 210px;
     color: white;
     font-family: 'Chivo', sans-serif;
@@ -61,10 +67,14 @@ h1{
     text-align: justify;
 }
 .DescriptionContainer h1{  
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 0.3vw;
+    padding-right: 0.3vw;
     text-align: center;
 }
+.DescriptionContainer h2{  
+    text-align: center;
+}
+
 p{  
     color: white;
     margin: 0px;
@@ -75,6 +85,10 @@ p{
 
     .DescriptionContainer h1{
         text-align: center;
+        font-size: 0.6em;
+    }
+    .DescriptionContainer h2{
+        text-align: center;
         padding: 15px;
     }
     .DescriptionContainer p{
@@ -82,9 +96,8 @@ p{
         padding: 15px;
     }
     .titleContainer{
-        top: 100px;
-        padding: 20px;
-        width: 40%;
+        top: 40px;
+
     }
 
 }
