@@ -28,7 +28,7 @@
 .optionMenu div{
     position: absolute;
     top: 66px;
-    z-index: 110;
+    z-index: 300;
     
 }
 .optionMenu div:hover{
