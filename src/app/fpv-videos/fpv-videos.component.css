@@ -1,0 +1,82 @@
+img{
+    width: 100%;
+    height: auto;
+}
+
+#BuildingsImage{
+    height: auto;
+}
+.image{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    max-height: 70vh;
+}
+
+.titleContainer{
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    z-index: 200;
+    background-color: #3C3F41;
+    opacity:  0.5;
+    width: 80%;
+    margin: 10%;
+}
+
+h1,h2{
+    z-index: 210px;
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    opacity:  1;
+}
+
+.welcome{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #3C3F41;
+}
+
+.welcome p{
+    padding: 50px;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Chivo', sans-serif;
+}
+
+.Whyus{
+    padding: 50px 60px 50px 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #3C3F41;
+    color: white;
+    font-family: 'Chivo', sans-serif;
+}
+ol{
+    margin: 0px;
+}
+
+article{
+    width: 90%;
+    padding-left: 20px;
+    text-align: justify;
+}
+h4{
+    text-align: center;
+}
+.fpvVideoGopro{
+    padding: 50px 60px 50px 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #3C3F41;
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+

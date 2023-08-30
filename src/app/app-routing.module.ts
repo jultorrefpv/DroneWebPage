@@ -6,6 +6,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { AerialPhotographyComponent } from "./aerial-photography/aerial-photography.component";
 import { AdvertismentComponent } from "./advertisment/advertisment.component"
 import { EventsComponent } from "./events/events.component"
+import { FpvVideosComponent } from './fpv-videos/fpv-videos.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'aerial-photography', component: AerialPhotographyComponent },
   { path: 'advertisment', component: AdvertismentComponent },
   { path: 'events', component: EventsComponent },
+  { path: 'fpv-videos', component: FpvVideosComponent },
 ];
 
 @NgModule({

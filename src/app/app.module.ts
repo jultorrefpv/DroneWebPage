@@ -14,6 +14,7 @@ import { HeaderPageComponent } from './components/header-page/header-page.compon
 import { EventsComponent } from './events/events.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServicesPanelComponent } from './components/services-panel/services-panel.component';
+import { FpvVideosComponent } from './fpv-videos/fpv-videos.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ServicesPanelComponent } from './components/services-panel/services-pan
     AdvertismentComponent,
     HeaderPageComponent,
     EventsComponent,
-    ServicesPanelComponent
+    ServicesPanelComponent,
+    FpvVideosComponent
   ],
   imports: [
     BrowserModule,

@@ -17,5 +17,11 @@ export const serviceDataPanel =
             pathImage: "../../../assets/Home/servicioPublicidad.png",
             Id: "PublicidadImg",
             routerLink: "../advertisment"
+        },
+        "Videos FPV":{
+            serviceName: "Servicios de videos con drones FPV Experiencia Visual Inmersiva con Videos FPV",
+            pathImage: "../../../assets/fpv-videos/googlesimag.jpg",
+            Id: "VideosFPV",
+            routerLink: "../fpv-videos"
         }
     }

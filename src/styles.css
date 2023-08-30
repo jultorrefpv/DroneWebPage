@@ -2,6 +2,8 @@
 body{
     margin: 0px;
     width: 100%;
+    background-color: #3f3f3f;
+    color: white;
 }
 
 .contacto{
@@ -47,10 +49,16 @@ h3{
 }
 
 .spacebetween{
-    justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
+    justify-content: center;
+    margin: 100px;
 }
 
+label{
+    color:white;
+}
+
+.form ::ng-deep div{
+    color: red;
+}
 
 
