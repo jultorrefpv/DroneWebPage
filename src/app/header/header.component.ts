@@ -27,4 +27,11 @@ export class HeaderComponent {
     this.showServicesMenu = false;
     this.isChecked = false;
   }
+  getcheck(){
+    console.log(this.isChecked)
+    return this.isChecked;
+  }
+  toggleCheck(){
+    this.isChecked = !this.isChecked;
+  }
 }

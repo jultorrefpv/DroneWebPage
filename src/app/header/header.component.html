@@ -1,5 +1,5 @@
 <section class="headerContainer">
-    <section class="LeftHeaderContainer" *ngIf="!isChecked">
+    <section class="LeftHeaderContainer" *ngIf="!getcheck()">
         <div>
             <img src="./../../assets/Iconos/logoHeader.png" alt="Logo Hyperion Art Studios" id="Logo" routerLink="home" (click)="hiddeservicesAndCloseMenu()">
         </div>
@@ -24,8 +24,8 @@
             <button >Contacto</button>
         </div>
     </section>
-    <section class="RightHeaderContainer2 container nav-container">
-        <input class="checkbox" type="checkbox" name="" id="" [(ngModel)]="isChecked" [checked]="isChecked" />
+    <section class="RightHeaderContainer2 container nav-container" >
+        <input class="checkbox" type="checkbox" (click)="toggleCheck()" [(ngModel)]="isChecked" [checked]="isChecked"/>
         <div class="hamburger-lines">
           <span class="line line1"></span>
           <span class="line line2"></span>
@@ -35,10 +35,10 @@
             <li><a routerLink="home" (click)="closeMenu()">Inicio</a></li>
             <li><a (click)=" onClickServices()">Nuestros Servicios</a></li>
             <ul *ngIf="showServicesMenu">
-                <li><a routerLink="aerial-photography" (click)="closeMenu()">{{serviceCopys['Fotografía Aérea'].serviceName}}</a></li>
-                <li><a routerLink="advertisment" (click)="closeMenu()">{{serviceCopys['Publicidad'].serviceName}}</a></li>
-                <li><a routerLink="events" (click)="closeMenu()">{{serviceCopys['Eventos Personales'].serviceName}}</a></li>
-                <li><a routerLink="fpv-videos" (click)="closeMenu()">{{serviceCopys['Videos FPV'].serviceName}}</a></li>
+                <li><a routerLink="aerial-photography" (click)="closeMenu()" class="subOption">{{serviceCopys['Fotografía Aérea'].serviceName}}</a></li>
+                <li><a routerLink="advertisment" (click)="closeMenu()" class="subOption">{{serviceCopys['Publicidad'].serviceName}}</a></li>
+                <li><a routerLink="events" (click)="closeMenu()" class="subOption">{{serviceCopys['Eventos Personales'].serviceName}}</a></li>
+                <li><a routerLink="fpv-videos" (click)="closeMenu()" class="subOption">{{serviceCopys['Videos FPV'].serviceName}}</a></li>
             </ul>
             <li><a routerLink="aboutUs" (click)="closeMenu()">Quienes somos</a></li>
             <li><a (click)="goToBottom()" (click)="closeMenu()">Contacto</a></li>

@@ -1,4 +1,6 @@
 
+
+
 .headerContainer{
     display: flex;
     justify-content: space-between;
@@ -93,6 +95,17 @@
 
 
 @media only screen and (min-width: 0px) and (max-width: 600px) {
+  .menu-items {
+    
+    box-shadow: inset 0 0 2000px #3C3F41;
+    width: 100%;
+    transform: translate(-500%);
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    text-align: left;
+    display: block;
+    max-height: 2px;
+  }
     .RightHeaderContainer{
         display: none;
     }
@@ -152,6 +165,13 @@
         transform: translateX(0);
         height: 100vh;
         display: block !important;
+        text-align: left;
+        max-height: none;
+        padding-top: 120px;
+        
+    }
+    .nav-container input[type="checkbox"]:checked ~ .LeftHeaderContainer {
+      display: none;
     }
     
     .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
@@ -165,9 +185,8 @@
     .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
         transform: rotate(-45deg);
     }
-    .menu-items {
-        display: flex;
-      }
+
+
       
     .nav-container li {
         list-style: none;
@@ -187,20 +206,8 @@
     .nav-container a:hover{
           font-weight: bolder;
       }
-      .nav-container input[type="checkbox"]:checked ~ .menu-items {
-        transform: translateX(0);
-      }
-      .menu-items {
-        padding-top: 120px;
-        box-shadow: inset 0 0 2000px #3C3F41;
-        width: 100%;
-        transform: translate(-500%);
-        display: flex;
-        flex-direction: column;
-        transition: transform 0.5s ease-in-out;
-        text-align: center;
-        display: none;
-      }
+
+ 
       
       .menu-items li {
         margin-bottom: 1.2rem;
@@ -208,9 +215,14 @@
         font-weight: 500;
       }
       .menu-items ul {
-        text-align: center;
+        text-align: left;
         padding-left: 0px;
       }
+      .subOption{
+        font-size: 15px !important;
+        margin-left: 5px;
+      }
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 2000px){
