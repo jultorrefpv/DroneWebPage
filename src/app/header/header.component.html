@@ -17,12 +17,16 @@
                 <p routerLink="servicio-grabacion-de-videos-con-drones-fpv">{{serviceCopys['Videos FPV'].serviceName}}</p>
             </div>
         </div>
+        <div class="optionMenu onCursor" routerLink="blog" (click)="hiddeservices()">
+            <button >Blog</button>
+        </div>
         <div class="optionMenu onCursor" routerLink="aboutUs" (click)="hiddeservices()">
             <button >Quienes somos</button>
         </div>
         <div class="optionMenu onCursor" (click)="goToBottom()">
             <button >Contacto</button>
         </div>
+
     </section>
     <section class="RightHeaderContainer2 container nav-container" >
         <input class="checkbox" type="checkbox" (click)="toggleCheck()" [(ngModel)]="isChecked" [checked]="isChecked"/>
@@ -40,6 +44,7 @@
                 <li><a routerLink="servicio-grabacion-de-eventos-con-drones" (click)="closeMenu()" class="subOption">{{serviceCopys['Eventos Personales'].serviceName}}</a></li>
                 <li><a routerLink="servicio-grabacion-de-videos-con-drones-fpv" (click)="closeMenu()" class="subOption">{{serviceCopys['Videos FPV'].serviceName}}</a></li>
             </ul>
+            <li><a routerLink="blog" (click)="closeMenu()">Blog</a></li>
             <li><a routerLink="aboutUs" (click)="closeMenu()">Quienes somos</a></li>
             <li><a (click)="goToBottom()" (click)="closeMenu()">Contacto</a></li>
         </div>
