@@ -10,13 +10,13 @@ import { FpvVideosComponent } from './fpv-videos/fpv-videos.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/servicio-dron', pathMatch: 'full'},
+  { path: 'servicio-dron', component: HomeComponent },
   { path: 'aboutUs', component: AboutUsComponent },
-  { path: 'aerial-photography', component: AerialPhotographyComponent },
-  { path: 'advertisment', component: AdvertismentComponent },
-  { path: 'events', component: EventsComponent },
-  { path: 'fpv-videos', component: FpvVideosComponent },
+  { path: 'servicio-fotografia-aerea-con-drones', component: AerialPhotographyComponent },
+  { path: 'servicio-publicidad-con-drones', component: AdvertismentComponent },
+  { path: 'servicio-grabacion-de-eventos-con-drones', component: EventsComponent },
+  { path: 'servicio-grabacion-de-videos-con-drones-fpv', component: FpvVideosComponent },
 ];
 
 @NgModule({

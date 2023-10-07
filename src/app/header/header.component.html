@@ -1,20 +1,20 @@
 <section class="headerContainer">
     <section class="LeftHeaderContainer" *ngIf="!getcheck()">
         <div>
-            <img src="./../../assets/Iconos/logoHeader.png" alt="Hyperion Art Studios" id="Logo" routerLink="home" (click)="hiddeservicesAndCloseMenu()">
+            <img src="./../../assets/Iconos/logoHeader.png" alt="Hyperion Art Studios" id="Logo" routerLink="servicio-dron" (click)="hiddeservicesAndCloseMenu()">
         </div>
     </section>
     <section class="RightHeaderContainer onCursor">
-        <div class="flex optionMenu onCursor" routerLink="home" (click)="hiddeservices()">
+        <div class="flex optionMenu onCursor" routerLink="servicio-dron" (click)="hiddeservices()">
             <p>Inicio</p>
         </div>
         <div class="optionMenu onCursor" id="ourServices" (mouseenter)="onClickServices()" (mouseleave)="onClickServices()">
             <button  class="serviceMenuButton">Nuestros Servicios</button>
             <div *ngIf="showServicesMenu" class="dropDownServices">
-                <p routerLink="aerial-photography">{{serviceCopys['Fotografía Aérea'].serviceName}}</p>
-                <p routerLink="advertisment">{{serviceCopys['Publicidad'].serviceName}}</p>
-                <p routerLink="events">{{serviceCopys['Eventos Personales'].serviceName}}</p>
-                <p routerLink="fpv-videos">{{serviceCopys['Videos FPV'].serviceName}}</p>
+                <p routerLink="servicio-fotografia-aerea-con-drones">{{serviceCopys['Fotografía Aérea'].serviceName}}</p>
+                <p routerLink="servicio-publicidad-con-drones">{{serviceCopys['Publicidad'].serviceName}}</p>
+                <p routerLink="servicio-grabacion-de-eventos-con-drones">{{serviceCopys['Eventos Personales'].serviceName}}</p>
+                <p routerLink="servicio-grabacion-de-videos-con-drones-fpv">{{serviceCopys['Videos FPV'].serviceName}}</p>
             </div>
         </div>
         <div class="optionMenu onCursor" routerLink="aboutUs" (click)="hiddeservices()">
@@ -32,13 +32,13 @@
           <span class="line line3"></span>
         </div>  
         <div class="menu-items">
-            <li><a routerLink="home" (click)="closeMenu()">Inicio</a></li>
+            <li><a routerLink="" (click)="closeMenu()">Inicio</a></li>
             <li><a (click)=" onClickServices()">Nuestros Servicios</a></li>
             <ul *ngIf="showServicesMenu">
-                <li><a routerLink="aerial-photography" (click)="closeMenu()" class="subOption">{{serviceCopys['Fotografía Aérea'].serviceName}}</a></li>
-                <li><a routerLink="advertisment" (click)="closeMenu()" class="subOption">{{serviceCopys['Publicidad'].serviceName}}</a></li>
-                <li><a routerLink="events" (click)="closeMenu()" class="subOption">{{serviceCopys['Eventos Personales'].serviceName}}</a></li>
-                <li><a routerLink="fpv-videos" (click)="closeMenu()" class="subOption">{{serviceCopys['Videos FPV'].serviceName}}</a></li>
+                <li><a routerLink="servicio-fotografia-aerea-con-drones" (click)="closeMenu()" class="subOption">{{serviceCopys['Fotografía Aérea'].serviceName}}</a></li>
+                <li><a routerLink="servicio-publicidad-con-drones" (click)="closeMenu()" class="subOption">{{serviceCopys['Publicidad'].serviceName}}</a></li>
+                <li><a routerLink="servicio-grabacion-de-eventos-con-drones" (click)="closeMenu()" class="subOption">{{serviceCopys['Eventos Personales'].serviceName}}</a></li>
+                <li><a routerLink="servicio-grabacion-de-videos-con-drones-fpv" (click)="closeMenu()" class="subOption">{{serviceCopys['Videos FPV'].serviceName}}</a></li>
             </ul>
             <li><a routerLink="aboutUs" (click)="closeMenu()">Quienes somos</a></li>
             <li><a (click)="goToBottom()" (click)="closeMenu()">Contacto</a></li>
